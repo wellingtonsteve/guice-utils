@@ -31,13 +31,19 @@ public class DestroyableComponentLifecycleManagerTest {
 	@Mock InvocationTargetException methodInvokationException;
 	
 	ClassWithAnnotatedPreDestroy preDestroyClass = new ClassWithAnnotatedPreDestroy();
-	Method method = preDestroyClass.getClass().getDeclaredMethods()[0];
-	Method exceptionMethod = preDestroyClass.getClass().getDeclaredMethods()[1];
+	Method method;
+	Method exceptionMethod;
 	
 	List<Object> singletonList;
 	
 	DestroyableComponentLifecycleManager manager;
-	
+
+    @Before
+    public void find_test_methods() throws NoSuchMethodException {
+        method = preDestroyClass.getClass().getDeclaredMethod("destroy");
+        exceptionMethod = preDestroyClass.getClass().getDeclaredMethod("throwError");
+    }
+
 	@Before 
 	public void initialise_singleton_list() {
 		singletonList = new ArrayList<Object>();
