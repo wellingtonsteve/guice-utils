@@ -1,4 +1,4 @@
-package flextrade.guiceutils.collections;
+package guiceutils.collections;
 
 import com.google.inject.Binder;
 import com.google.inject.Binding;
