@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>guice-utils</groupId>
+	<groupId>com.sjwitservices</groupId>
 	<artifactId>guice-utils</artifactId>
 	<version>1.9.0-SNAPSHOT</version>
 	<dependencies>
@@ -43,7 +43,18 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
+	
+  <scm>
+    <url>https://github.com/wellingtonsteve/guice-utils</url>
+  </scm>
+  
+  <licenses>
+    <license>
+      <name>New BSD License</name>
+      <url>http://www.opensource.org/licenses/bsd-license.php</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
 
 	<build>
 		<plugins>
